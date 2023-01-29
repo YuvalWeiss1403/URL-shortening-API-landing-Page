@@ -150,6 +150,46 @@ button:hover{
     font-family: 'Poppins', sans-serif;
 }
 
+#shorted-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+}
+
+.short-url-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+    background-color: white;
+    height: 40px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.long-url{
+    color: black;
+    font-size: 18px
+}
+
+.short-url{
+    color:hsl(180, 66%, 49%);
+    font-size: 18px
+}
+
+.short-URL-and-copy-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.short-URL-and-copy-container button{
+    width: 65px;
+    border-radius: 9px;
+}
+
 .advanced-statistics{
     display: flex;
     justify-content: center;
@@ -163,7 +203,8 @@ button:hover{
 .advanced-statistics .advanced-statistics-heading{
     font-weight: 700;
     font-size: 20px;
-    color:  hsl(260, 8%, 14%)
+    color:  hsl(260, 8%, 14%);
+    padding-top: 20px;
 }
 .advanced-statistics .advanced-statistics-content{
     color:hsl(257, 7%, 63%);
