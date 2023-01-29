@@ -51,6 +51,9 @@ button:hover{
     align-items: center;
     gap: 10px;
 }
+.navbar-option-menu{
+    display: none;
+}
 
 #resources:hover,
 #features:hover,
@@ -463,4 +466,15 @@ button:hover{
         border: 0;
         background-color: grey;
     }
+    .navbar .navbar-right-side div{
+        display: none;
+    }
+    .navbar .navbar-left-side{
+        display: none;
+    }
+    .navbar-option-menu{
+        display: block;
+        color: hsl(0, 0%, 75%);
+    }
+
 }
