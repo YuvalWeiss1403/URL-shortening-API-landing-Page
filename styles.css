@@ -162,13 +162,15 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 1;
     background-color: white;
     height: 40px;
     align-items: center;
     border-radius: 10px;
 }
-
+.short-url-container hr{
+    display: none;
+}
 .long-url{
     color: black;
     font-size: 18px
@@ -355,4 +357,110 @@ button:hover{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (max-width:865px) {
+    .get-started-container{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .get-started-container .content{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .get-started-heading{
+        width: 390px;
+    }
+    .get-started-body{
+        width: 65%;
+    }
+    .working-img, #illustration-working-img{
+        position: relative;
+    }
+    .input-container{
+        flex-direction: column;
+        padding: 20px;
+        width: 75%;
+        gap: 20px;
+    }
+    .input-container #input {
+       width: 95%; 
+    }
+    .input-container #shorten-it-button{
+        width: 100%;
+    }
+    .input-container label{
+        padding-top: 0;
+    }
+    .advanced-statistics .advanced-statistics-content{
+        width: 80%;
+        padding: 20px;
+    }
+    .advanced-statistics-dashboard{
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+    .advanced-statistics-dashboard hr{
+        width: 5px;
+        height: 470px;
+        left: 50%;
+    }
+    .detailed-records-container,
+    .fully-customizable-container{
+        margin-top: 20px;
+    }
+    .advanced-statistics-dashboard span{
+        margin-left: 105px;
+    }
+    .boost-links {
+        height: 200px;
+    }
+    .boost-links button{
+        width: 60%;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .footer .icons{
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .advanced-statistics{
+        padding-top: 90px;
+    }
+    .short-url-container{
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .short-URL-and-copy-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    #shorted-container{
+        flex-direction: column;
+    }
+    .short-URL-and-copy-container button{
+        width:90%;
+        padding-left: 20px;
+        margin-left: 5%;
+    }
+    .short-url-container hr{
+        display: block;
+        width: 100%;
+        display: block;
+        height: 1px;
+        border: 0;
+        background-color: grey;
+    }
 }

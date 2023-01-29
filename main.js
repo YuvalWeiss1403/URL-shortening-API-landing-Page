@@ -35,6 +35,7 @@ function createNewShortedLinkDiv(longUrl,shortUrl){
     const container = document.createElement('div');
     const longURL = document.createElement('div');
     const shortURLandCopyContainer = document.createElement('div');
+    const hr = document.createElement('hr');
     const shortURL = document.createElement('div');
     const copyButton =document.createElement('button');
     longURL.innerHTML = longUrl;
@@ -48,6 +49,7 @@ function createNewShortedLinkDiv(longUrl,shortUrl){
     shortURLandCopyContainer.appendChild(shortURL);
     shortURLandCopyContainer.appendChild(copyButton);
     container.appendChild(longURL);
+    container.appendChild(hr);
     container.appendChild(shortURLandCopyContainer);
     shortedContainer.appendChild(container);
     copyButton.addEventListener('click',(event)=>{
