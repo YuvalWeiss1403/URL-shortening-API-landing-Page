@@ -38,6 +38,9 @@ button:hover{
 .navbar div{
     padding: 10px;
 }
+#mobile-navigation-container{
+    display: none;
+}
 .navbar .navbar-right-side{
     display: flex;
     flex-direction: row;
@@ -55,14 +58,14 @@ button:hover{
     display: none;
 }
 
-#resources:hover,
-#features:hover,
-#pricing:hover{
+.resources:hover,
+.features:hover,
+.pricing:hover{
     color: black;
     cursor: pointer;
 }
 
-.navbar .navbar-left-side #login{
+.navbar .navbar-left-side .login{
     color: hsl(0, 0%, 75%);
     background-color: white;
 }
@@ -475,6 +478,50 @@ button:hover{
     .navbar-option-menu{
         display: block;
         color: hsl(0, 0%, 75%);
+    }
+    #mobile-menu:hover{
+        cursor: pointer;
+        color: black;
+    }
+    #mobile-navigation-container{
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 5px;
+        background-color:hsl(260, 18%, 20%);
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+        width: 35%;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    #mobile-navigation-container hr{
+        width: 90%;
+        border: 0;
+        background-color: hsl(0, 1%, 81%);
+        height: 1px;
+    }
+    
+    #mobile-navigation-container .buttom-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+    }
+
+    #mobile-navigation-container .buttom-menu .login{
+        background-color:hsl(260, 18%, 20%);
+    }
+    .login:hover{
+        border: 1px solid hsl(0, 0%, 75%);
+    }
+    .resources:hover,
+    .features:hover,
+    .pricing:hover{
+        color: hsl(180, 54%, 64%);
     }
 
 }

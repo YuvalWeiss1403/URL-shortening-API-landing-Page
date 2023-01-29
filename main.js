@@ -4,6 +4,8 @@ const shortenInput = document.getElementById('input');
 const inputEmptyLabel=document.getElementById('input-empty-label');
 const shortedContainer = document.getElementById('shorted-container');
 shortedContainer.className ='shortedContainer';
+const mobileMenuButton = document.getElementById('mobile-menu');
+const mobileMenu = document.getElementById('mobile-navigation-container');
 
 
 
@@ -58,4 +60,13 @@ function createNewShortedLinkDiv(longUrl,shortUrl){
         navigator.clipboard.writeText(event.target.parentElement.children[0].innerHTML);
     });
 }
+
+mobileMenuButton.addEventListener('click',()=>{
+    let menuDisplay = window.getComputedStyle(mobileMenu).display;
+    if(menuDisplay === 'none'){
+        mobileMenu.style.display = 'flex';
+    }else{
+        mobileMenu.style.display = 'none';
+    }
+});
 
