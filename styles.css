@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+button{
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: 700;
+    color: white;
+    background-color:hsl(180, 66%, 49%);
+}
+button:hover{
+    cursor: pointer;
+    background-color:hsl(180, 54%, 64%);
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.navbar div{
+    padding: 10px;
+}
+.navbar .navbar-right-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: hsl(0, 0%, 75%);
+}
+.navbar .navbar-left-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#resources:hover,
+#features:hover,
+#pricing:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.navbar .navbar-left-side #login{
+    color: hsl(0, 0%, 75%);
+    background-color: white;
+}
+
+.navbar #logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
+}
+
+.get-started-container{
+    display: flex;
+    padding-left: 70px;
+
+}
+
+.get-started-container .content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.content #get-started-button{
+    width: 105px;
+}
+
+.get-started-container .get-started-heading{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.working-img,#illustration-working-img{
+    width: 450px;
+    position: absolute;
+    right: -20px;
+    z-index: -1;
+}
+
+.input-modal{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 105px;
+    justify-content: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(/images/bg-shorten-desktop.svg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color: hsl(260, 8%, 14%);
+    gap: 10px;
+    position: absolute;
+    border-radius: 5px;
+    align-items: center;
+    height: 105px;
+    width: 85%;
+    z-index: 1;
+}
+
+.input-container #input{
+    border-radius: 10px;
+    width: 70%;
+    height: 45px;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+
+.input-container label{
+    position: absolute;
+    left: 55px;
+    padding-top: 75px;
+    font-size: 12px;
+    color: red;
+    font-weight: 500;
+    display: none;
+}
+.input-container #shorten-it-button{
+    border-radius: 10px;
+    height: 45px;
+    width: 17%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.advanced-statistics{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 95%);
+    padding-top: 80px;
+    margin-top: -55px;
+}
+
+.advanced-statistics .advanced-statistics-heading{
+    font-weight: 700;
+    font-size: 20px;
+    color:  hsl(260, 8%, 14%)
+}
+.advanced-statistics .advanced-statistics-content{
+    color:hsl(257, 7%, 63%);
+    width: 60%;
+    text-align: center;
+}
+
+.advanced-statistics-dashboard{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px;
+}
+.advanced-statistics-dashboard hr{
+    width: 45%;
+    background-color: hsl(180, 66%, 49%);
+    position: absolute;
+    height: 5px;
+    border: 0;
+    margin-top: 153px;
+    left: 25%;
+}
+.advanced-statistics-dashboard span{
+    justify-items: center;
+    background-color: hsl(260, 18%, 20%);
+    border-radius: 50%;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    margin-left: 15px;
+}
+.advanced-statistics-dashboard img{
+    object-fit: contain;
+    width: 35px;
+}
+
+.advanced-statistics-dashboard .heading{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.advanced-statistics-dashboard .text{
+    color: hsl(257, 7%, 63%);
+}
+
+.brand-recognition-content, 
+.detailed-records-content,
+.fully-customizable-content{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 15px;
+    padding: 25px 30px;
+    width: 210px;
+    height: 165px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.brand-recognition-container{
+    z-index: 1;
+}
+.detailed-records-container{
+    margin-top: 40px;
+    z-index: 1;
+}
+.fully-customizable-container{
+    margin-top: 70px;
+    z-index: 1;
+}
+
+.boost-links{
+    background-image: url(/images/bg-boost-desktop.svg);
+    background-color: hsl(260, 8%, 14%);
+    color: white;
+    background-size:cover;
+    background-repeat:no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 130px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color:hsl(260, 8%, 14%) ;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.footer .footer-heading{
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+.footer .content{
+    color: hsl(257, 7%, 63%);
+    font-size: 10px;
+}
+
+.footer .content:hover{
+    cursor: pointer;
+    color: hsl(180, 66%, 49%);
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+.footer .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+#icon-facebook:hover{
+    content: url(/images/icon-facebook-hover.svg);
+    cursor: pointer;
+}
+#icon-twitter:hover{
+    content: url(/images/icon-twitter-hover.svg);
+    cursor: pointer;
+}
+#icon-pinterest:hover{
+    content: url(/images/icon-pinterest-hover.svg);
+    cursor: pointer;
+}
+#icon-instagram:hover{
+    content: url(/images/icon-instagram-hover.svg);
+    cursor: pointer;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
