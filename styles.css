@@ -112,7 +112,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: url(/images/bg-shorten-desktop.svg);
+    background-image: url(images/bg-shorten-desktop.svg);
     background-size:cover;
     background-repeat:no-repeat;
     background-color: hsl(260, 8%, 14%);
@@ -283,7 +283,7 @@ button:hover{
 }
 
 .boost-links{
-    background-image: url(/images/bg-boost-desktop.svg);
+    background-image: url(images/bg-boost-desktop.svg);
     background-color: hsl(260, 8%, 14%);
     color: white;
     background-size:cover;
