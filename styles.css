@@ -370,6 +370,7 @@ button:hover{
     .get-started-container{
         flex-direction: column-reverse;
         padding: 20px;
+        overflow-x: hidden;
     }
     .get-started-container .content{
         width: 100%;
